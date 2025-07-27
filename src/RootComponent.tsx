@@ -23,9 +23,7 @@ import { WindowHeightContextProvider } from 'shared/providers/WindowHeightContex
 
 import TempMainPage from 'routes/main/TempMainPage'
 import { SignInPage, ForgotPasswordPage, SignUpPage } from 'routes/auth'
-import { PrivacyPolicyPage, TermsPage } from 'routes/public'
-import { DeviceTooSmallOverlay } from 'shared/components'
-import { useTabletQuery } from 'shared/components/DeviceTooSmallOverlay'
+import { PrivacyPolicyPage, TermsPage, HomePage } from 'routes/public'
 import { ErrorScreen } from 'shared/screens'
 
 const router = createBrowserRouter([
@@ -33,7 +31,7 @@ const router = createBrowserRouter([
     path: '/',
     element: <RootLayout />,
     children: [
-      { index: true, element: <Index /> },
+      { index: true, element: <HomePage /> },
       {
         element: <Auth />,
         children: [
@@ -101,16 +99,14 @@ export default function App() {
         }
       })
   )
-  const tablet = useTabletQuery()
 
   return (
     <QueryClientProvider client={queryClient}>
       <ModalProvider>
         <LoadingScreenProvider>
           <WindowHeightContextProvider>
-            {!tablet && <RouterProvider router={router} />}
+            <RouterProvider router={router} />
             <Toaster />
-            <DeviceTooSmallOverlay />
           </WindowHeightContextProvider>
         </LoadingScreenProvider>
       </ModalProvider>
