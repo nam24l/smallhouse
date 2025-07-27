@@ -1,3 +1,7 @@
+import React from 'react'
+// or
+import { JSX } from 'react'
+
 export type ActivitySpinnerType = {
   circleColor?: string
 }

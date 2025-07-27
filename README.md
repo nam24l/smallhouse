@@ -1,6 +1,6 @@
 # React Tailwindcss Boilerplate build with Vite
 
-This is Small Houses website. Huge thanks to [Donovyn Gantt](https://github.com/DonGantt)
+This is Small Houses website. Huge thanks to [Donovyn Gantt](https://github.com/DonGantt) for the boilerplate typescript code.
 
 ## What is inside?
 
