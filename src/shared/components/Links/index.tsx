@@ -61,7 +61,7 @@ const Links: React.FC = () => {
     <div className="mx-auto w-full max-w-6xl p-4 text-center text-gray-100">
       {/* Text Above Social Links */}
       <h2 className="mb-2 text-lg font-semibold sm:text-xl md:text-2xl">
-        Check out our Insta and YouTube Channel!
+        Check out our Insta and Youtube!
       </h2>
 
       {/* Social Links - Always Two Columns Side-by-Side */}

@@ -20,7 +20,7 @@ export default function HomePage() {
       />
 
       {/* Logo pinned near the top */}
-      <div className="relative z-10 flex justify-center pt-6 sm:pt-10">
+      <div className="relative z-10 flex justify-center pt-6 sm:pt-4">
         <img
           src={images.logo}
           alt="Small house logo"
