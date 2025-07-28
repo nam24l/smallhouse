@@ -4,6 +4,7 @@ import { InformationPopupContextProvider } from 'shared/providers/InformationPop
 import { WindowHeightContextProvider } from 'shared/providers/WindowHeightContext'
 import useAuthStore from 'stores/useAuthStore'
 import { Header } from 'shared/components'
+import { Footer } from 'shared/components'
 export function Index() {
   const isLoggedIn = useAuthStore((s) => s.accessToken)
   return <Navigate to={isLoggedIn ? '/dashboard' : '/sign-in'} replace={true} />
@@ -17,6 +18,7 @@ export function RootLayout() {
           <div className="relative size-full">
             <Header />
             <Outlet />
+            <Footer />
           </div>
         </WindowHeightContextProvider>
       </InformationPopupContextProvider>

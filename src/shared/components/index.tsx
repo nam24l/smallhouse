@@ -1,3 +1,4 @@
+import Footer from './Footer'
 import Header from './Header'
 
 export {
@@ -18,3 +19,4 @@ export {
 } from './FormCreatableSelect'
 export { default as Links } from './Links'
 export { default as Header } from './Header'
+export { default as Footer } from './Footer'
