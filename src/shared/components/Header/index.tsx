@@ -41,7 +41,7 @@ const Header: React.FC<HeaderProps> = ({ className = '' }) => {
         <ul className="hidden space-x-4 sm:flex sm:space-x-6 lg:space-x-8">
           <li>
             <a
-              href="#home"
+              href="/"
               className="text-sm font-medium text-white transition-all duration-200 hover:underline hover:underline-offset-4 sm:text-base lg:text-lg"
             >
               Home
@@ -49,7 +49,7 @@ const Header: React.FC<HeaderProps> = ({ className = '' }) => {
           </li>
           <li>
             <a
-              href="#about"
+              href="/about"
               className="text-sm font-medium text-white transition-all duration-200 hover:underline hover:underline-offset-4 sm:text-base lg:text-lg"
             >
               About

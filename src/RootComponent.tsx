@@ -23,7 +23,12 @@ import { WindowHeightContextProvider } from 'shared/providers/WindowHeightContex
 
 import TempMainPage from 'routes/main/TempMainPage'
 import { SignInPage, ForgotPasswordPage, SignUpPage } from 'routes/auth'
-import { PrivacyPolicyPage, TermsPage, HomePage } from 'routes/public'
+import {
+  PrivacyPolicyPage,
+  TermsPage,
+  HomePage,
+  AboutPage
+} from 'routes/public'
 import { ErrorScreen } from 'shared/screens'
 
 const router = createBrowserRouter([
@@ -66,6 +71,10 @@ const router = createBrowserRouter([
       {
         path: 'terms',
         element: <TermsPage />
+      },
+      {
+        path: 'about',
+        element: <AboutPage />
       }
     ],
     errorElement: <ErrorScreen />
