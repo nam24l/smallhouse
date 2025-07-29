@@ -1,4 +1,5 @@
 import React from 'react'
+import images from 'assets/images'
 
 const AboutPage: React.FC = () => {
   return (
@@ -20,10 +21,10 @@ const AboutPage: React.FC = () => {
       <div className="flex flex-col items-center justify-center gap-12 md:flex-row">
         <div className="text-center">
           <h3 className="mb-2 text-xl font-bold">Jacob</h3>
-          <div className="mx-auto mb-2 size-32">
+          <div className="mx-auto mb-2 size-56">
             <img
-              src="/images/alice.jpg" // Replace with actual image
-              alt="Alice Johnson"
+              src={images.jacob}
+              alt="Jacob"
               className="size-full rounded-full border-4 border-white object-cover"
             />
           </div>
@@ -31,25 +32,25 @@ const AboutPage: React.FC = () => {
         </div>
         <div className="text-center">
           <h3 className="mb-2 text-xl font-bold">Nelson</h3>
-          <div className="mx-auto mb-2 size-32">
+          <div className="mx-auto mb-2 size-56">
             <img
-              src="/images/carol.jpg" // Replace with actual image
-              alt="Carol White"
+              src="/images/nelson.jpg" // Replace with actual image
+              alt="Nelson"
               className="size-full rounded-full border-4 border-white object-cover"
             />
           </div>
-          <p className="text-sm">Guitar, Keys, Lead Songwriter</p>
+          <p className="text-sm">Shredder Ace, Keys, Lead Songwriter</p>
         </div>
         <div className="text-center">
           <h3 className="mb-2 text-xl font-bold">Joseph</h3>
-          <div className="mx-auto mb-2 size-32">
+          <div className="mx-auto mb-2 size-56">
             <img
-              src="/images/bob.jpg" // Replace with actual image
-              alt="Bob Smith"
+              src={images.joseph}
+              alt="Joseph"
               className="size-full rounded-full border-4 border-white object-cover"
             />
           </div>
-          <p className="text-sm">Production magic, Percussion</p>
+          <p className="text-sm">Production Magic, Percussion</p>
         </div>
       </div>
     </div>

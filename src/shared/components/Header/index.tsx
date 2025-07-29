@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router'
 
 interface HeaderProps {
   className?: string
@@ -40,28 +41,28 @@ const Header: React.FC<HeaderProps> = ({ className = '' }) => {
         {/* Desktop navigation */}
         <ul className="hidden space-x-4 sm:flex sm:space-x-6 lg:space-x-8">
           <li>
-            <a
-              href="/"
+            <Link
+              to="/"
               className="text-sm font-medium text-white transition-all duration-200 hover:underline hover:underline-offset-4 sm:text-base lg:text-lg"
             >
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="/about"
+            <Link
+              to="/about"
               className="text-sm font-medium text-white transition-all duration-200 hover:underline hover:underline-offset-4 sm:text-base lg:text-lg"
             >
               About
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="#contact"
+            <Link
+              to="/contact"
               className="text-sm font-medium text-white transition-all duration-200 hover:underline hover:underline-offset-4 sm:text-base lg:text-lg"
             >
               Contact
-            </a>
+            </Link>
           </li>
         </ul>
 
@@ -75,31 +76,31 @@ const Header: React.FC<HeaderProps> = ({ className = '' }) => {
         >
           <ul className="flex flex-col space-y-3 p-4">
             <li>
-              <a
-                href="#home"
+              <Link
+                to="/"
                 onClick={() => setIsMenuOpen(false)}
                 className="block text-sm font-medium text-white transition-all duration-200 hover:underline hover:underline-offset-4"
               >
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#about"
+              <Link
+                to="/about"
                 onClick={() => setIsMenuOpen(false)}
                 className="block text-sm font-medium text-white transition-all duration-200 hover:underline hover:underline-offset-4"
               >
                 About
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#contact"
+              <Link
+                to="/contact"
                 onClick={() => setIsMenuOpen(false)}
                 className="block text-sm font-medium text-white transition-all duration-200 hover:underline hover:underline-offset-4"
               >
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

@@ -27,7 +27,8 @@ import {
   PrivacyPolicyPage,
   TermsPage,
   HomePage,
-  AboutPage
+  AboutPage,
+  ContactPage
 } from 'routes/public'
 import { ErrorScreen } from 'shared/screens'
 
@@ -75,6 +76,10 @@ const router = createBrowserRouter([
       {
         path: 'about',
         element: <AboutPage />
+      },
+      {
+        path: 'contact',
+        element: <ContactPage />
       }
     ],
     errorElement: <ErrorScreen />
