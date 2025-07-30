@@ -21,7 +21,7 @@ const AboutPage: React.FC = () => {
       <div className="flex flex-col items-center justify-center gap-12 md:flex-row">
         <div className="text-center">
           <h3 className="mb-2 text-xl font-bold">Jacob</h3>
-          <div className="mx-auto mb-2 size-56">
+          <div className="mx-auto mb-2 size-64">
             <img
               src={images.jacob}
               alt="Jacob"
@@ -32,9 +32,9 @@ const AboutPage: React.FC = () => {
         </div>
         <div className="text-center">
           <h3 className="mb-2 text-xl font-bold">Nelson</h3>
-          <div className="mx-auto mb-2 size-56">
+          <div className="mx-auto mb-2 size-64">
             <img
-              src="/images/nelson.jpg" // Replace with actual image
+              src={images.nelson}
               alt="Nelson"
               className="size-full rounded-full border-4 border-white object-cover"
             />
@@ -43,7 +43,7 @@ const AboutPage: React.FC = () => {
         </div>
         <div className="text-center">
           <h3 className="mb-2 text-xl font-bold">Joseph</h3>
-          <div className="mx-auto mb-2 size-56">
+          <div className="mx-auto mb-2 size-64">
             <img
               src={images.joseph}
               alt="Joseph"

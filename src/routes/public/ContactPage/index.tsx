@@ -13,7 +13,7 @@ const ContactPage: React.FC = () => {
         <p>Contact us for bookings and business inquiries...</p>
       </div>
       <div className="mx-auto mb-12 max-w-3xl text-center text-xl font-bold underline md:text-xl">
-        <a href="mailto:example@example.com">Click to Email Us</a>
+        <a href="mailto:contact.our.casa@proton.me">Click to Email Us</a>
       </div>
     </div>
   )
